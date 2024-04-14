@@ -38,6 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'baymax',
+    'patient',
+    'doctor',
+    'workingTime',
+    'nurse',
+    'appointment',
+    'companion', 
 ]
 
 MIDDLEWARE = [

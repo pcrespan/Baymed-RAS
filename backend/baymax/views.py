@@ -38,7 +38,7 @@ def register(request):
         last_name = data.get('last_name')
 
         if username and email and password:
-            user = User.objects.create_user(username=username, email=email, password=password, first_name=first_name, last_name=last_name)
+            user = User.objects.create_user(username=username, email=email, password=password, first_name=first_name, last_name=last_name)  
 
             return JsonResponse({'message': 'Success!'}, status=201)
         else:

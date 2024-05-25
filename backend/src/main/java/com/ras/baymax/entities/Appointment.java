@@ -1,6 +1,6 @@
 package com.ras.baymax.entities;
 
-import com.ras.baymax.entities.enums.Priority;
+import com.ras.baymax.entities.enums.Status;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -9,7 +9,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "TB_APPOINTMENTS")
-public class Appointment implements Serializable {
+public class Appointment implements Serializable, Comparable<Appointment> {
 
     private static final long serialVersionUID = 1L;
 
@@ -36,12 +36,12 @@ public class Appointment implements Serializable {
     @Column(columnDefinition = "TEXT")
     private String symptoms;
 
-    private Priority priority;
+    private Status status;
 
     public Appointment() {
     }
 
-    public Appointment(Long id, Doctor doctor, Nurse nurse, Patient patient, Companion companion, LocalDateTime dateTime, String symptoms, Priority priority) {
+    public Appointment(Long id, Doctor doctor, Nurse nurse, Patient patient, Companion companion, LocalDateTime dateTime, String symptoms, Status status) {
         this.id = id;
         this.doctor = doctor;
         this.nurse = nurse;
@@ -49,16 +49,10 @@ public class Appointment implements Serializable {
         this.companion = companion;
         this.dateTime = dateTime;
         this.symptoms = symptoms;
-        this.priority = priority;
+        this.status = status;
     }
 
-    public Priority getPriority() {
-        return priority;
-    }
 
-    public void setPriority(Priority priority) {
-        this.priority = priority;
-    }
 
     public String getSymptoms() {
         return symptoms;
@@ -127,5 +121,10 @@ public class Appointment implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @Override
+    public int compareTo(Appointment o) {
+        return getDateTime().compareTo(o.getDateTime());
     }
 }

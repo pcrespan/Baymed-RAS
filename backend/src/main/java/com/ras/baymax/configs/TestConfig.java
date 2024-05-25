@@ -1,5 +1,6 @@
 package com.ras.baymax.configs;
 
+import com.ras.baymax.entities.Appointment;
 import com.ras.baymax.entities.Doctor;
 import com.ras.baymax.entities.WorkHours;
 import com.ras.baymax.entities.enums.Specialty;

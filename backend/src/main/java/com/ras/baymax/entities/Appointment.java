@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -33,15 +34,17 @@ public class Appointment implements Serializable, Comparable<Appointment> {
     private Companion companion;
 
     private LocalDateTime dateTime;
-    @Column(columnDefinition = "TEXT")
-    private String symptoms;
+
+    @OneToMany
+    @JoinColumn(name = "SYMPTOM_ID")
+    private List<Symptom> symptoms;
 
     private Status status;
 
     public Appointment() {
     }
 
-    public Appointment(Long id, Doctor doctor, Nurse nurse, Patient patient, Companion companion, LocalDateTime dateTime, String symptoms, Status status) {
+    public Appointment(Long id, Doctor doctor, Nurse nurse, Patient patient, Companion companion, LocalDateTime dateTime, List<Symptom> symptoms, Status status) {
         this.id = id;
         this.doctor = doctor;
         this.nurse = nurse;
@@ -52,14 +55,20 @@ public class Appointment implements Serializable, Comparable<Appointment> {
         this.status = status;
     }
 
-
-
-    public String getSymptoms() {
+    public List<Symptom> getSymptoms() {
         return symptoms;
     }
 
-    public void setSymptoms(String symptoms) {
+    public void setSymptoms(List<Symptom> symptoms) {
         this.symptoms = symptoms;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
     }
 
     public Patient getPatient() {

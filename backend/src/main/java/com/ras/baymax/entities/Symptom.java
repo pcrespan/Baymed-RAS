@@ -3,23 +3,35 @@ package com.ras.baymax.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "TB_SYMPTOMS")
+@Table(name = "TB_SYMPT")
 public class Symptom {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String en;
-    private String key;
+    private String symptomKey;
     private String ptbr;
+    @ManyToOne
+    @JoinColumn(name = "APPOINTMENT_ID")
+    private Appointment appointment;
 
     public Symptom() {
     }
 
-    public Symptom(Long id, String en, String key, String ptbr) {
+    public Symptom(Long id, String en, String symptomKey, String ptbr, Appointment appointment) {
         this.id = id;
         this.en = en;
-        this.key = key;
+        this.symptomKey = symptomKey;
         this.ptbr = ptbr;
+        this.appointment = appointment;
+    }
+
+    public Appointment getAppointment() {
+        return appointment;
+    }
+
+    public void setAppointment(Appointment appointment) {
+        this.appointment = appointment;
     }
 
     public Long getId() {
@@ -38,12 +50,12 @@ public class Symptom {
         this.en = en;
     }
 
-    public String getKey() {
-        return key;
+    public String getSymptomKey() {
+        return symptomKey;
     }
 
-    public void setKey(String key) {
-        this.key = key;
+    public void setSymptomKey(String symptomKey) {
+        this.symptomKey = symptomKey;
     }
 
     public String getPtbr() {

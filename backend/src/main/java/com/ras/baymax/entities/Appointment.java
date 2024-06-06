@@ -35,8 +35,7 @@ public class Appointment implements Serializable, Comparable<Appointment> {
 
     private LocalDateTime dateTime;
 
-    @OneToMany
-    @JoinColumn(name = "SYMPTOM_ID")
+    @OneToMany(mappedBy = "appointment")
     private List<Symptom> symptoms;
 
     private Status status;

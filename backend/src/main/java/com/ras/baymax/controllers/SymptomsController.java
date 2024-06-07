@@ -1,7 +1,7 @@
 package com.ras.baymax.controllers;
 
-import com.ras.baymax.entities.Symptom;
-import com.ras.baymax.services.SymptomService;
+import com.ras.baymax.entities.Appointment;
+import com.ras.baymax.services.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -11,12 +11,12 @@ import java.util.LinkedHashMap;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/symptoms")
+@RequestMapping(value = "/prognostic")
 @PreAuthorize("hasRole('ROLE_DOCTOR')")
 public class SymptomsController {
 
     @Autowired
-    private SymptomService symptomService;
+    private AppointmentService appointmentService;
 
     @GetMapping
     public List<LinkedHashMap> getSymptoms() {
@@ -26,9 +26,10 @@ public class SymptomsController {
     }
 
     @PostMapping
-    public List<LinkedHashMap> postSymptoms(@RequestBody List<Symptom> symptoms) {
+    public List<LinkedHashMap> getPrognostic(@RequestBody Appointment appointment) {
         String url = "https://api-baymed.onrender.com/api/prediction";
+        appointmentService.extractSymptoms(appointment).forEach(System.out::println);
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.postForObject(url, symptomService.getSymptoms(symptoms), List.class);
+        return restTemplate.postForObject(url, appointmentService.extractSymptoms(appointment), List.class);
     }
 }

@@ -1,5 +1,6 @@
 package com.ras.baymax.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
@@ -11,7 +12,7 @@ public class Symptom {
     private String en;
     private String symptomKey;
     private String ptbr;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "APPOINTMENT_ID")
     private Appointment appointment;
 
@@ -26,6 +27,7 @@ public class Symptom {
         this.appointment = appointment;
     }
 
+    @JsonIgnore
     public Appointment getAppointment() {
         return appointment;
     }

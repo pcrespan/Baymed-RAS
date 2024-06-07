@@ -4,7 +4,8 @@ import com.ras.baymax.entities.enums.Status;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -29,11 +30,7 @@ public class Appointment implements Serializable, Comparable<Appointment> {
     @JoinColumn(name = "PATIENT_ID")
     private Patient patient;
 
-    @ManyToOne
-    @JoinColumn(name = "COMPANION_ID")
-    private Companion companion;
-
-    private LocalDateTime dateTime;
+    private Date dateTime;
 
     @OneToMany(mappedBy = "appointment")
     private List<Symptom> symptoms;
@@ -43,12 +40,11 @@ public class Appointment implements Serializable, Comparable<Appointment> {
     public Appointment() {
     }
 
-    public Appointment(Long id, Doctor doctor, Nurse nurse, Patient patient, Companion companion, LocalDateTime dateTime, List<Symptom> symptoms, Status status) {
+    public Appointment(Long id, Doctor doctor, Nurse nurse, Patient patient, Date dateTime, List<Symptom> symptoms, Status status) {
         this.id = id;
         this.doctor = doctor;
         this.nurse = nurse;
         this.patient = patient;
-        this.companion = companion;
         this.dateTime = dateTime;
         this.symptoms = symptoms;
         this.status = status;
@@ -78,14 +74,6 @@ public class Appointment implements Serializable, Comparable<Appointment> {
         this.patient = patient;
     }
 
-    public Companion getCompanion() {
-        return companion;
-    }
-
-    public void setCompanion(Companion companion) {
-        this.companion = companion;
-    }
-
     public Long getId() {
         return id;
     }
@@ -110,11 +98,11 @@ public class Appointment implements Serializable, Comparable<Appointment> {
         this.nurse = nurse;
     }
 
-    public LocalDateTime getDateTime() {
+    public Date getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(LocalDateTime dateTime) {
+    public void setDateTime(Date dateTime) {
         this.dateTime = dateTime;
     }
 

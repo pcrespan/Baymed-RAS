@@ -17,6 +17,8 @@ public class Companion implements Serializable {
     private String name;
     private Long cpf;
     private Date birth;
+    @OneToOne(mappedBy = "companion", cascade = CascadeType.PERSIST)
+    private Patient patient;
 
     public Companion() {
     }

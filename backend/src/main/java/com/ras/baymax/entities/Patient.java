@@ -18,6 +18,9 @@ public class Patient implements Serializable {
     private String name;
     private Long cpf;
     private Date birth;
+    @OneToOne
+    @JoinColumn(name = "COMPANION_ID")
+    private Companion companion;
 
     @OneToMany(mappedBy = "patient")
     private List<Appointment> appointments;
@@ -25,11 +28,21 @@ public class Patient implements Serializable {
     public Patient() {
     }
 
-    public Patient(Long id, String name, Long cpf, Date birth) {
+    public Patient(Long id, String name, Long cpf, Date birth, Companion companion, List<Appointment> appointments) {
         this.id = id;
         this.name = name;
         this.cpf = cpf;
         this.birth = birth;
+        this.companion = companion;
+        this.appointments = appointments;
+    }
+
+    public Companion getCompanion() {
+        return companion;
+    }
+
+    public void setCompanion(Companion companion) {
+        this.companion = companion;
     }
 
     public Long getId() {

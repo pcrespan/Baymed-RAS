@@ -4,10 +4,7 @@ import com.ras.baymax.entities.Appointment;
 import com.ras.baymax.services.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,7 +16,8 @@ public class AppointmentController {
     @Autowired
     private AppointmentService appointmentService;
 
-    public Appointment saveAppointment(Appointment appointment) {
+    @PostMapping
+    public Appointment saveAppointment(@RequestBody Appointment appointment) {
         return appointmentService.save(appointment);
     }
 

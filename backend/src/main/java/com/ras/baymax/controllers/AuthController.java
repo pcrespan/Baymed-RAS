@@ -10,6 +10,8 @@ import com.ras.baymax.services.PhoneService;
 import com.ras.baymax.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
@@ -57,7 +59,8 @@ public class AuthController {
     }
 
     @GetMapping(value = "login-success")
-    public ResponseEntity<String> loginSuccessful() {
-        return ResponseEntity.ok().body("Authenticated");
+    public ResponseEntity<List<GrantedAuthority>> loginSuccessful() {
+        List<GrantedAuthority> authorities = (List<GrantedAuthority>) SecurityContextHolder.getContext().getAuthentication().getAuthorities();
+        return ResponseEntity.ok().body(authorities);
     }
 }

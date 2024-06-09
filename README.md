@@ -3,11 +3,18 @@
 ## What is the project?
 This is a IA based project that give a diagnosis to doctors and help them at the first contact to pacient.
 
-## What's the stack?
-Python, Web Dev
+# Backend
 
-## How to run - (Linux)?
-- Install Django with: `python3 -m pip install Django`
-- Install npm
-- run `npm install`
-- run application `python3 manage.py startapp myapi`
+## What's the stack?
+Java 21 and Spring Boot
+
+### How to run with Docker - (Linux)?
+- run `docker build -t baymax-backend:latest .`
+- run `docker run -p 8080:8080 baymax-backend:latest`
+
+### How to run with docker-compose - (Linux)?
+- run `docker-compose up --build -d`
+
+### Check container status
+- check if container is running `docker ps`
+- check container logs `docker logs <container_name> -f`

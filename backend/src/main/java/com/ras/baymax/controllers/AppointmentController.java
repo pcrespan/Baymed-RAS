@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/appointments")
+@CrossOrigin
 @PreAuthorize("hasRole('ROLE_NURSE')")
 public class AppointmentController {
 

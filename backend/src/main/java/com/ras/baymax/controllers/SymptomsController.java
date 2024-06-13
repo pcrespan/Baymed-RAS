@@ -21,7 +21,7 @@ public class SymptomsController {
 
     @GetMapping
     public List<LinkedHashMap> getSymptoms() {
-        String url = "https://api-baymed.onrender.com/api/symptons";
+        String url = "https://api-baymed.onrender.com/api/symptoms";
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(url, List.class);
     }

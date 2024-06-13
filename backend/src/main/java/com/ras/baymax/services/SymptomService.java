@@ -20,7 +20,7 @@ public class SymptomService {
         List<String> symptomList = new ArrayList<String>();
         Map<String, List<String>> symptomMap = new HashMap<String, List<String>>();
         symptoms.forEach(symptom -> symptomList.add(symptom.getEn()));
-        symptomMap.put("symptons", symptomList);
+        symptomMap.put("symptoms", symptomList);
         return symptomMap;
     }
 

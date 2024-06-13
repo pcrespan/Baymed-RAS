@@ -27,10 +27,9 @@ public class SymptomsController {
     }
 
     @PostMapping
-    public List<LinkedHashMap> getPrognostic(@RequestBody Appointment appointment) {
+    public List<LinkedHashMap> getPrognostic(@RequestBody List<String> symptoms) {
         String url = "https://api-baymed.onrender.com/api/prediction";
-        appointmentService.extractSymptoms(appointment).forEach(System.out::println);
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.postForObject(url, appointmentService.extractSymptoms(appointment), List.class);
+        return restTemplate.postForObject(url, symptoms, List.class);
     }
 }

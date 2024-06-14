@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/companions")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin()
 @PreAuthorize("hasRole('ROLE_NURSE')")
 public class CompanionController {
 

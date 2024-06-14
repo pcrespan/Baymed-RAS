@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/prognostic")
-@CrossOrigin
+@CrossOrigin()
 @PreAuthorize("hasRole('ROLE_DOCTOR')")
 public class SymptomsController {
 

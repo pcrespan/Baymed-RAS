@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/nurses")
-@CrossOrigin
+@CrossOrigin()
 @PreAuthorize("hasRole('ROLE_NURSE')")
 public class NurseController {
     @Autowired

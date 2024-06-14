@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/doctors")
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:3000")
 @PreAuthorize("hasRole('ROLE_DOCTOR') or hasRole('ROLE_NURSE')")
 public class DoctorController {
 

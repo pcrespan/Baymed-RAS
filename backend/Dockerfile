@@ -1,6 +1,6 @@
 FROM maven:latest AS builder
 
-COPY backend /app
+COPY . /app
 
 WORKDIR /app
 

@@ -13,7 +13,6 @@ public interface AppointmentRepository extends JpaRepository<Appointment, Long> 
             SELECT * FROM TB_APPOINTMENTS
             WHERE DOCTOR_ID = :doctorId
             AND STATUS = :status
-            ORDER BY DATE
             """)
     List<Appointment> findAppointmentsByDoctorId(@Param("doctorId") Long doctorId, @Param("status") Status status);
 

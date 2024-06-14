@@ -1,0 +1,652 @@
+[
+  {
+    "en": "Itching",
+    "key": "itching",
+    "ptbr": "Coceira"
+  },
+  {
+    "en": "Skin rash",
+    "key": "skin_rash",
+    "ptbr": "Erup\u00e7\u00f5es cut\u00e2neas"
+  },
+  {
+    "en": "Nodal skin eruptions",
+    "key": "nodal_skin_eruptions",
+    "ptbr": "Erup\u00e7\u00f5es nodulares na pele"
+  },
+  {
+    "en": "Continuous sneezing",
+    "key": "continuous_sneezing",
+    "ptbr": "Espirros cont\u00ednuos"
+  },
+  {
+    "en": "Shivering",
+    "key": "shivering",
+    "ptbr": "Tremores"
+  },
+  {
+    "en": "Chills",
+    "key": "chills",
+    "ptbr": "Calafrios"
+  },
+  {
+    "en": "Joint pain",
+    "key": "joint_pain",
+    "ptbr": "Dor nas articula\u00e7\u00f5es"
+  },
+  {
+    "en": "Stomach pain",
+    "key": "stomach_pain",
+    "ptbr": "Dor no est\u00f4mago"
+  },
+  {
+    "en": "Acidity",
+    "key": "acidity",
+    "ptbr": "Acidez"
+  },
+  {
+    "en": "Ulcers on tongue",
+    "key": "ulcers_on_tongue",
+    "ptbr": "\u00dalceras na l\u00edngua"
+  },
+  {
+    "en": "Muscle wasting",
+    "key": "muscle_wasting",
+    "ptbr": "Desgaste muscular"
+  },
+  {
+    "en": "Vomiting",
+    "key": "vomiting",
+    "ptbr": "V\u00f4mito"
+  },
+  {
+    "en": "Burning micturition",
+    "key": "burning_micturition",
+    "ptbr": "Ard\u00eancia ao urinar"
+  },
+  {
+    "en": "Spotting urination",
+    "key": "spotting_urination",
+    "ptbr": "Manchas ao urinar"
+  },
+  {
+    "en": "Fatigue",
+    "key": "fatigue",
+    "ptbr": "Fadiga"
+  },
+  {
+    "en": "Weight gain",
+    "key": "weight_gain",
+    "ptbr": "Ganho de peso"
+  },
+  {
+    "en": "Anxiety",
+    "key": "anxiety",
+    "ptbr": "Ansiedade"
+  },
+  {
+    "en": "Cold hands and feets",
+    "key": "cold_hands_and_feets",
+    "ptbr": "M\u00e3os e p\u00e9s frios"
+  },
+  {
+    "en": "Mood swings",
+    "key": "mood_swings",
+    "ptbr": "Mudan\u00e7as de humor"
+  },
+  {
+    "en": "Weight loss",
+    "key": "weight_loss",
+    "ptbr": "Perda de peso"
+  },
+  {
+    "en": "Restlessness",
+    "key": "restlessness",
+    "ptbr": "Inquieta\u00e7\u00e3o"
+  },
+  {
+    "en": "Lethargy",
+    "key": "lethargy",
+    "ptbr": "Letargia"
+  },
+  {
+    "en": "Patches in throat",
+    "key": "patches_in_throat",
+    "ptbr": "Placas na garganta"
+  },
+  {
+    "en": "Irregular sugar level",
+    "key": "irregular_sugar_level",
+    "ptbr": "N\u00edvel irregular de a\u00e7\u00facar"
+  },
+  {
+    "en": "Cough",
+    "key": "cough",
+    "ptbr": "Tosse"
+  },
+  {
+    "en": "High fever",
+    "key": "high_fever",
+    "ptbr": "Febre alta"
+  },
+  {
+    "en": "Sunken eyes",
+    "key": "sunken_eyes",
+    "ptbr": "Olhos encovados"
+  },
+  {
+    "en": "Breathlessness",
+    "key": "breathlessness",
+    "ptbr": "Falta de ar"
+  },
+  {
+    "en": "Sweating",
+    "key": "sweating",
+    "ptbr": "Sudorese"
+  },
+  {
+    "en": "Dehydration",
+    "key": "dehydration",
+    "ptbr": "Desidrata\u00e7\u00e3o"
+  },
+  {
+    "en": "Indigestion",
+    "key": "indigestion",
+    "ptbr": "Indigest\u00e3o"
+  },
+  {
+    "en": "Headache",
+    "key": "headache",
+    "ptbr": "Dor de cabe\u00e7a"
+  },
+  {
+    "en": "Yellowish skin",
+    "key": "yellowish_skin",
+    "ptbr": "Pele amarelada"
+  },
+  {
+    "en": "Dark urine",
+    "key": "dark_urine",
+    "ptbr": "Urina escura"
+  },
+  {
+    "en": "Nausea",
+    "key": "nausea",
+    "ptbr": "N\u00e1usea"
+  },
+  {
+    "en": "Loss of appetite",
+    "key": "loss_of_appetite",
+    "ptbr": "Perda de apetite"
+  },
+  {
+    "en": "Pain behind the eyes",
+    "key": "pain_behind_the_eyes",
+    "ptbr": "Dor atr\u00e1s dos olhos"
+  },
+  {
+    "en": "Back pain",
+    "key": "back_pain",
+    "ptbr": "Dor nas costas"
+  },
+  {
+    "en": "Constipation",
+    "key": "constipation",
+    "ptbr": "Constipa\u00e7\u00e3o"
+  },
+  {
+    "en": "Abdominal pain",
+    "key": "abdominal_pain",
+    "ptbr": "Dor abdominal"
+  },
+  {
+    "en": "Diarrhoea",
+    "key": "diarrhoea",
+    "ptbr": "Diarreia"
+  },
+  {
+    "en": "Mild fever",
+    "key": "mild_fever",
+    "ptbr": "Febre leve"
+  },
+  {
+    "en": "Yellow urine",
+    "key": "yellow_urine",
+    "ptbr": "Urina amarela"
+  },
+  {
+    "en": "Yellowing of eyes",
+    "key": "yellowing_of_eyes",
+    "ptbr": "Amarelamento dos olhos"
+  },
+  {
+    "en": "Acute liver failure",
+    "key": "acute_liver_failure",
+    "ptbr": "Fal\u00eancia hep\u00e1tica aguda"
+  },
+  {
+    "en": "Fluid overload",
+    "key": "fluid_overload",
+    "ptbr": "Sobrecarga de fluidos"
+  },
+  {
+    "en": "Swelling of stomach",
+    "key": "swelling_of_stomach",
+    "ptbr": "Incha\u00e7o do est\u00f4mago"
+  },
+  {
+    "en": "Swelled lymph nodes",
+    "key": "swelled_lymph_nodes",
+    "ptbr": "Linfonodos inchados"
+  },
+  {
+    "en": "Malaise",
+    "key": "malaise",
+    "ptbr": "Mal-estar"
+  },
+  {
+    "en": "Blurred and distorted vision",
+    "key": "blurred_and_distorted_vision",
+    "ptbr": "Vis\u00e3o emba\u00e7ada e distorcida"
+  },
+  {
+    "en": "Phlegm",
+    "key": "phlegm",
+    "ptbr": "Catarro"
+  },
+  {
+    "en": "Throat irritation",
+    "key": "throat_irritation",
+    "ptbr": "Irrita\u00e7\u00e3o na garganta"
+  },
+  {
+    "en": "Redness of eyes",
+    "key": "redness_of_eyes",
+    "ptbr": "Vermelhid\u00e3o nos olhos"
+  },
+  {
+    "en": "Sinus pressure",
+    "key": "sinus_pressure",
+    "ptbr": "Press\u00e3o sinusal"
+  },
+  {
+    "en": "Runny nose",
+    "key": "runny_nose",
+    "ptbr": "Coriza"
+  },
+  {
+    "en": "Congestion",
+    "key": "congestion",
+    "ptbr": "Congest\u00e3o"
+  },
+  {
+    "en": "Chest pain",
+    "key": "chest_pain",
+    "ptbr": "Dor no peito"
+  },
+  {
+    "en": "Weakness in limbs",
+    "key": "weakness_in_limbs",
+    "ptbr": "Fraqueza nos membros"
+  },
+  {
+    "en": "Fast heart rate",
+    "key": "fast_heart_rate",
+    "ptbr": "Batimento card\u00edaco r\u00e1pido"
+  },
+  {
+    "en": "Pain during bowel movements",
+    "key": "pain_during_bowel_movements",
+    "ptbr": "Dor durante a evacua\u00e7\u00e3o"
+  },
+  {
+    "en": "Pain in anal region",
+    "key": "pain_in_anal_region",
+    "ptbr": "Dor na regi\u00e3o anal"
+  },
+  {
+    "en": "Bloody stool",
+    "key": "bloody_stool",
+    "ptbr": "Fezes com sangue"
+  },
+  {
+    "en": "Irritation in anus",
+    "key": "irritation_in_anus",
+    "ptbr": "Irrita\u00e7\u00e3o no \u00e2nus"
+  },
+  {
+    "en": "Neck pain",
+    "key": "neck_pain",
+    "ptbr": "Dor no pesco\u00e7o"
+  },
+  {
+    "en": "Dizziness",
+    "key": "dizziness",
+    "ptbr": "Tontura"
+  },
+  {
+    "en": "Cramps",
+    "key": "cramps",
+    "ptbr": "C\u00e3imbras"
+  },
+  {
+    "en": "Bruising",
+    "key": "bruising",
+    "ptbr": "Hematomas"
+  },
+  {
+    "en": "Obesity",
+    "key": "obesity",
+    "ptbr": "Obesidade"
+  },
+  {
+    "en": "Swollen legs",
+    "key": "swollen_legs",
+    "ptbr": "Pernas inchadas"
+  },
+  {
+    "en": "Swollen blood vessels",
+    "key": "swollen_blood_vessels",
+    "ptbr": "Vasos sangu\u00edneos inchados"
+  },
+  {
+    "en": "Puffy face and eyes",
+    "key": "puffy_face_and_eyes",
+    "ptbr": "Rosto e olhos inchados"
+  },
+  {
+    "en": "Enlarged thyroid",
+    "key": "enlarged_thyroid",
+    "ptbr": "Tireoide aumentada"
+  },
+  {
+    "en": "Brittle nails",
+    "key": "brittle_nails",
+    "ptbr": "Unhas quebradi\u00e7as"
+  },
+  {
+    "en": "Swollen extremeties",
+    "key": "swollen_extremeties",
+    "ptbr": "Extremidades inchadas"
+  },
+  {
+    "en": "Excessive hunger",
+    "key": "excessive_hunger",
+    "ptbr": "Fome excessiva"
+  },
+  {
+    "en": "Extra marital contacts",
+    "key": "extra_marital_contacts",
+    "ptbr": "Contatos extraconjugais"
+  },
+  {
+    "en": "Drying and tingling lips",
+    "key": "drying_and_tingling_lips",
+    "ptbr": "L\u00e1bios secos e formigando"
+  },
+  {
+    "en": "Slurred speech",
+    "key": "slurred_speech",
+    "ptbr": "Fala arrastada"
+  },
+  {
+    "en": "Hip joint pain",
+    "key": "hip_joint_pain",
+    "ptbr": "Dor na articula\u00e7\u00e3o do quadril"
+  },
+  {
+    "en": "Muscle weakness",
+    "key": "muscle_weakness",
+    "ptbr": "Fraqueza muscular"
+  },
+  {
+    "en": "Stiff neck",
+    "key": "stiff_neck",
+    "ptbr": "Rigidez no pesco\u00e7o"
+  },
+  {
+    "en": "Swelling joints",
+    "key": "swelling_joints",
+    "ptbr": "Incha\u00e7o nas articula\u00e7\u00f5es"
+  },
+  {
+    "en": "Movement stiffness",
+    "key": "movement_stiffness",
+    "ptbr": "Rigidez de movimentos"
+  },
+  {
+    "en": "Spinning movements",
+    "key": "spinning_movements",
+    "ptbr": "Movimentos girat\u00f3rios"
+  },
+  {
+    "en": "Loss of balance",
+    "key": "loss_of_balance",
+    "ptbr": "Perda de equil\u00edbrio"
+  },
+  {
+    "en": "Unsteadiness",
+    "key": "unsteadiness",
+    "ptbr": "Falta de estabilidade"
+  },
+  {
+    "en": "Weakness of one body side",
+    "key": "weakness_of_one_body_side",
+    "ptbr": "Fraqueza de um lado do corpo"
+  },
+  {
+    "en": "Loss of smell",
+    "key": "loss_of_smell",
+    "ptbr": "Perda de olfato"
+  },
+  {
+    "en": "Bladder discomfort",
+    "key": "bladder_discomfort",
+    "ptbr": "Desconforto na bexiga"
+  },
+  {
+    "en": "Foul smell of urine",
+    "key": "foul_smell_of_urine",
+    "ptbr": "Odor forte da urina"
+  },
+  {
+    "en": "Continuous feel of urine",
+    "key": "continuous_feel_of_urine",
+    "ptbr": "Sensa\u00e7\u00e3o cont\u00ednua de urina"
+  },
+  {
+    "en": "Passage of gases",
+    "key": "passage_of_gases",
+    "ptbr": "Passagem de gases"
+  },
+  {
+    "en": "Internal itching",
+    "key": "internal_itching",
+    "ptbr": "Coceira interna"
+  },
+  {
+    "en": "Toxic look (typhos)",
+    "key": "toxic_look_(typhos)",
+    "ptbr": "Apar\u00eancia t\u00f3xica (tifo)"
+  },
+  {
+    "en": "Depression",
+    "key": "depression",
+    "ptbr": "Depress\u00e3o"
+  },
+  {
+    "en": "Irritability",
+    "key": "irritability",
+    "ptbr": "Irrita\u00e7\u00e3o"
+  },
+  {
+    "en": "Muscle pain",
+    "key": "muscle_pain",
+    "ptbr": "Dor muscular"
+  },
+  {
+    "en": "Altered sensorium",
+    "key": "altered_sensorium",
+    "ptbr": "Sensorium alterado"
+  },
+  {
+    "en": "Red spots over body",
+    "key": "red_spots_over_body",
+    "ptbr": "Manchas vermelhas no corpo"
+  },
+  {
+    "en": "Belly pain",
+    "key": "belly_pain",
+    "ptbr": "Dor na barriga"
+  },
+  {
+    "en": "Abnormal menstruation",
+    "key": "abnormal_menstruation",
+    "ptbr": "Menstrua\u00e7\u00e3o anormal"
+  },
+  {
+    "en": "Dischromic patches",
+    "key": "dischromic_patches",
+    "ptbr": "Manchas discrom\u00e1ticas"
+  },
+  {
+    "en": "Watering from eyes",
+    "key": "watering_from_eyes",
+    "ptbr": "Lacrimejamento dos olhos"
+  },
+  {
+    "en": "Increased appetite",
+    "key": "increased_appetite",
+    "ptbr": "Aumento do apetite"
+  },
+  {
+    "en": "Polyuria",
+    "key": "polyuria",
+    "ptbr": "Poli\u00faria"
+  },
+  {
+    "en": "Family history",
+    "key": "family_history",
+    "ptbr": "Hist\u00f3rico familiar"
+  },
+  {
+    "en": "Mucoid sputum",
+    "key": "mucoid_sputum",
+    "ptbr": "Escarro muc\u00f3ide"
+  },
+  {
+    "en": "Rusty sputum",
+    "key": "rusty_sputum",
+    "ptbr": "Escarro enferrujado"
+  },
+  {
+    "en": "Lack of concentration",
+    "key": "lack_of_concentration",
+    "ptbr": "Falta de concentra\u00e7\u00e3o"
+  },
+  {
+    "en": "Visual disturbances",
+    "key": "visual_disturbances",
+    "ptbr": "Dist\u00farbios visuais"
+  },
+  {
+    "en": "Receiving blood transfusion",
+    "key": "receiving_blood_transfusion",
+    "ptbr": "Recebendo transfus\u00e3o de sangue"
+  },
+  {
+    "en": "Receiving unsterile injections",
+    "key": "receiving_unsterile_injections",
+    "ptbr": "Recebendo inje\u00e7\u00f5es n\u00e3o esterilizadas"
+  },
+  {
+    "en": "Coma",
+    "key": "coma",
+    "ptbr": "Coma"
+  },
+  {
+    "en": "Stomach bleeding",
+    "key": "stomach_bleeding",
+    "ptbr": "Sangramento estomacal"
+  },
+  {
+    "en": "Distention of abdomen",
+    "key": "distention_of_abdomen",
+    "ptbr": "Distens\u00e3o abdominal"
+  },
+  {
+    "en": "History of alcohol consumption",
+    "key": "history_of_alcohol_consumption",
+    "ptbr": "Hist\u00f3rico de consumo de \u00e1lcool"
+  },
+  {
+    "en": "Blood in sputum",
+    "key": "blood_in_sputum",
+    "ptbr": "Sangue no escarro"
+  },
+  {
+    "en": "Prominent veins on calf",
+    "key": "prominent_veins_on_calf",
+    "ptbr": "Veias proeminentes na panturrilha"
+  },
+  {
+    "en": "Palpitations",
+    "key": "palpitations",
+    "ptbr": "Palpita\u00e7\u00f5es"
+  },
+  {
+    "en": "Painful walking",
+    "key": "painful_walking",
+    "ptbr": "Dor ao caminhar"
+  },
+  {
+    "en": "Pus filled pimples",
+    "key": "pus_filled_pimples",
+    "ptbr": "Espinhas com pus"
+  },
+  {
+    "en": "Blackheads",
+    "key": "blackheads",
+    "ptbr": "Cravos"
+  },
+  {
+    "en": "Scurring",
+    "key": "scurring",
+    "ptbr": "Cicatrizes"
+  },
+  {
+    "en": "Skin peeling",
+    "key": "skin_peeling",
+    "ptbr": "Descama\u00e7\u00e3o da pele"
+  },
+  {
+    "en": "Silver like dusting",
+    "key": "silver_like_dusting",
+    "ptbr": "Argiria"
+  },
+  {
+    "en": "Small dents in nails",
+    "key": "small_dents_in_nails",
+    "ptbr": "Pequenas depress\u00f5es nas unhas"
+  },
+  {
+    "en": "Inflammatory nails",
+    "key": "inflammatory_nails",
+    "ptbr": "Unhas inflamadas"
+  },
+  {
+    "en": "Blister",
+    "key": "blister",
+    "ptbr": "Bolha"
+  },
+  {
+    "en": "Red sore around nose",
+    "key": "red_sore_around_nose",
+    "ptbr": "Ferida vermelha ao redor do nariz"
+  },
+  {
+    "en": "Yellow crust ooze",
+    "key": "yellow_crust_ooze",
+    "ptbr": "Crosta amarela exsudativa"
+  }
+]

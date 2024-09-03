@@ -1,20 +1,20 @@
-# Baymax-RAS
+# Baymax-RAS (Front & Back-end)
 
-## What is the project?
-This is a IA based project that give a diagnosis to doctors and help them at the first contact to pacient.
+## Description
+The project helps doctors in the first contact with a patient. The main goal is to receive a prognostic of the patient's disease before the doctor actually evaluating the symptoms. This can be achieved through the use of an AI model that predicts possible diseases based on the patient's symptoms. This action can help the doctor to determine the patient's disease with more precision, and has the potential of making the appointment faster.
 
 # Backend
 
-## What's the stack?
-Java 21 and Spring Boot
+## Stack
+Spring boot and React
 
-### How to run with Docker - (Linux)?
+### Running with Docker - Linux
 - run `docker build -t baymax-backend:latest .`
 - run `docker run -p 8080:8080 baymax-backend:latest`
 
-### How to run with docker-compose - (Linux)?
+### Running with docker-compose - Linux
 - run `docker-compose up --build -d`
 
 ### Check container status
-- check if container is running `docker ps`
-- check container logs `docker logs <container_name> -f`
+- Check if the container is running `docker ps`
+- Check container is writing logs `docker logs <container_name> -f`
